@@ -1,0 +1,5 @@
+# Binaries
+main
+# Docker
+*.tar
+
