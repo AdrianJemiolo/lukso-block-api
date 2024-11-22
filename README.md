@@ -70,4 +70,4 @@ http://localhost:8080/block-number
 - Modify the Dockerfile to update dependencies or build parameters if required.
 ---
 ### License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License 🙂
