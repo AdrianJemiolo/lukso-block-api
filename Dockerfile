@@ -1,30 +1,30 @@
-# Pobierz obraz bazowy
+# Pull the base image
 FROM golang:1.22-alpine
 
-# Ustaw katalog roboczy
+# Set the working directory
 WORKDIR /app
 
-# Zainstaluj wymagane narzędzia
+# Install required tools
 RUN apk add --no-cache git
 
-# Zainstaluj narzędzie swag
+# Install swag tool
 RUN go install github.com/swaggo/swag/cmd/swag@latest
 
-# Skopiuj pliki go.mod i go.sum i pobierz zależności
+# Copy go.mod and go.sum files and download dependencies
 COPY go.mod go.sum ./
 RUN go mod download
 
-# Skopiuj cały kod źródłowy
+# Copy the entire source code
 COPY . .
 
-# Wygeneruj dokumentację Swagger
+# Generate Swagger documentation
 RUN swag init
 
-# Zbuduj aplikację
+# Build the application
 RUN go build -o main .
 
-# Wystaw port aplikacji
+# Expose the application port
 EXPOSE 8080
 
-# Uruchom aplikację
+# Run the application
 CMD ["./main"]
