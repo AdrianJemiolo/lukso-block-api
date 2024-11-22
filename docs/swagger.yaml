@@ -1,0 +1,11 @@
+basePath: /
+host: localhost:8080
+info:
+  contact: {}
+  description: API for fetching the latest block number from LUKSO Testnet.
+  title: LUKSO Block API
+  version: "1.0"
+paths: {}
+schemes:
+- http
+swagger: "2.0"
