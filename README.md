@@ -65,6 +65,27 @@ Access the API at:
 http://localhost:8080/block-number
 ```
 ---
+### Docker Deployment (Docker Compose)
+You can use Docker Compose to simplify the deployment process:
+
+1. Build and run the application:
+```bash
+docker-compose up -d
+```
+The application will be accessible at:
+```plaintext
+http://localhost:8080/block-number
+```
+2. Stop and remove containers:
+```bash
+docker-compose down
+```
+3. Check logs (optional):
+```bash
+docker-compose logs -f
+```
+
+---
 ### Notes
 - The LUKSO Testnet RPC endpoint is hardcoded in the project: https://rpc.testnet.lukso.network.
 - Modify the Dockerfile to update dependencies or build parameters if required.
