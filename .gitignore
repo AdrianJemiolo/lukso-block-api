@@ -3,3 +3,4 @@ main
 # Docker
 *.tar
 
+.DS_Store
