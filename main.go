@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
+	_ "lukso-block-api/docs" // Import wygenerowanej dokumentacji
 	_ "lukso-block-api/docs" // Import generated docs
 
 	"github.com/ethereum/go-ethereum/rpc"
