@@ -4,3 +4,4 @@ main
 *.tar
 
 .env
+.DS_Store
