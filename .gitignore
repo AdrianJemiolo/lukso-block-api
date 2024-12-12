@@ -3,4 +3,5 @@ main
 # Docker
 *.tar
 
+.env
 .DS_Store
